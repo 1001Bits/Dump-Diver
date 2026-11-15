@@ -1,0 +1,31 @@
+# capture	verdict kind or *	top suspect or -	least confidence	[record text]
+# stand-in game scenarios (test/host.cpp)
+standin-busy-plugin.ddsnap	main_thread_loop_in_plugin	DDTestCulprit.dll	High
+standin-deadlock.ddsnap	deadlock	DDTestCulprit.dll	High
+standin-dialog.ddsnap	hidden_dialog	DDTestCulprit.dll	High
+standin-engine-lock.ddsnap	engine_lock_wait	DDTestCulprit.dll	Medium
+standin-engine-loop-record.ddsnap	main_thread_loop_in_game	-	-
+standin-gpu-decoy.ddsnap	gpu_wait	-	-
+standin-loading-stall.ddsnap	endless_loading	DDTestCulprit.dll	Medium
+standin-plugin-loop-engine.ddsnap	main_thread_loop_in_plugin	DDTestCulprit.dll	Medium
+standin-task-engine-loop.ddsnap	main_thread_loop_in_game	DDTestCulprit.dll	Medium
+standin-worker-busy.ddsnap	engine_wait	DDTestCulprit.dll	Medium
+# real freezes reproduced in the lab
+real-skypatcher712-faction.ddsnap	engine_wait	SkyPatcher.dll	High	TESFaction 05000800
+real-splashes10-solitude.ddsnap	engine_wait	po3_SplashesOfSkyrim.dll	High	TESWorldSpace 0000003C
+real-pe621-cosave.ddsnap	main_thread_loop_in_plugin	po3_PapyrusExtender.dll	High
+real-pe611-keywords.ddsnap	main_thread_loop_in_plugin	po3_PapyrusExtender.dll	High
+# taken before the face check existed (v1): only checks that the lab probe is not blamed
+real-sp712-copyvisualstyle-v1.ddsnap	main_thread_loop_in_game	-	-
+real-sp712-copyvisualstyle.ddsnap	main_thread_loop_in_game	SkyPatcher.dll	Medium	Character 00013486
+real-avg2212-nested.ddsnap	engine_wait	ActorValueGenerator.dll	High
+real-fec610-randomflag.ddsnap	engine_wait	po3_FEC.dll	Medium
+real-spid23-outfits.ddsnap	main_thread_loop_in_plugin	po3_SpellPerkItemDistributor.dll	High	BGSOutfit 05000800
+real-mdnm140-leakedlock.ddsnap	main_waits_in_plugin	MuDynamicNormalMap.dll	Medium
+real-mfee046-reload.ddsnap	engine_wait	MuFacialExpressionExtended.dll	High
+real-mdnm215-queueloop.ddsnap	main_thread_loop_in_plugin	MuDynamicNormalMap.dll	Medium
+real-spawner12b-maxnpcs.ddsnap	engine_wait	NPCSpawner.dll	Medium
+real-shot130-namelesscell.ddsnap	engine_wait	ScreenshotHelper.dll	Medium	TESObjectCELL 05000800
+real-gamma109-leftlock.ddsnap	lock_left_held	DynamicGamma.dll	High
+real-soulsy011-shoutlock.ddsnap	main_waits_in_plugin	SoulsyHUD.dll	High
+real-sp712cvs-bystanders.ddsnap	main_thread_loop_in_plugin	SkyPatcher.dll	Medium	Character 00013486
